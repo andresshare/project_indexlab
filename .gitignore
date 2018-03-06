@@ -1,0 +1,16 @@
+myproject/settings.py
+contacto/models.py
+contacto/admin.py
+myproject/urls.py
+contacto/__pycache__/__init__.cpython-36.pyc
+contacto/__pycache__/admin.cpython-36.pyc
+contacto/__pycache__/models.cpython-36.pyc
+contacto/__pycache__/views.cpython-36.pyc
+contacto/migrations/__pycache__/0001_initial.cpython-36.pyc
+contacto/migrations/__pycache__/__init__.cpython-36.pyc
+myproject/__pycache__/__init__.cpython-36.pyc
+myproject/__pycache__/settings.cpython-36.pyc
+myproject/__pycache__/urls.cpython-36.pyc
+myproject/__pycache__/wsgi.cpython-36.pyc
+manage.py
+contacto/tests.py
