@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'ptn57f';
+	src: url('ptn57f.eot');
+	src: url('ptn57f.eot?#iefix') format('embedded-opentype'),
+		url('ptn57f.woff') format('woff'),
+		url('ptn57f.ttf') format('truetype'),
+		url('ptn57f.svg') format('svg');
+}

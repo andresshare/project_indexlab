@@ -1,19 +1,94 @@
-<!DOCTYPE html>
+{% load static %}<!DOCTYPE html>
 <html>
 
 <head>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/boilerplate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styleinddex.css'%}">
     <meta charset="utf-8">
-    <title>indexlab</title>
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0">
+
 </head>
 
 <body>
-    <h1>Contacto</h1>
 
-    {% for contacto in contactos %} 
-    {{ contacto.nombre }}<br> 
-    {% endfor %}
-
-
+    <div id="primaryContainer" class="primaryContainer clearfix">
+        <div id="Box-contacto" class="clearfix">
+            <p id="C_deContacto">
+                <span id="SpanC_mayuscula">C.</span>
+                <br />
+                <span id="SpanContacto">Contacto</span>
+            </p>
+            <div id="Box_logo" class="clearfix">
+                <a href="../index.html">
+                    <img id="logotipoInddex" src="{% static 'img/inddex%20logo.svg'%}" class="image" />
+                </a>
+                <div id="Box_menu" class="clearfix">
+                    <a id="texto_NOSOTROS" href="nosotros.html">
+                        . NOSOTROS
+                    </a>
+                    <a id="texto_TRABAJO" href="trabajos.html">
+                        . NUESTRO TRABAJO
+                    </a>
+                    <p id="texto_CONTACTENOS">
+                        .CONTACTENOS
+                    </p>
+                </div>
+            </div>
+            <div id="Box_Formulario" class="clearfix">
+                <div id="Group_nombre-formulario" class="clearfix">
+                    <p id="N_-formulario">
+                        N&#x3a;
+                    </p>
+                    <p id="texto_nombre-formulario">
+                        escriba aqui su nombre.
+                    </p>
+                </div>
+                <div id="Group_email-formulario" class="clearfix">
+                    <p id="_-formulario">
+                        &#x40;&#x3a;
+                    </p>
+                    <p id="texto_email-formulario">
+                        escriba aqui su E-mail.
+                    </p>
+                </div>
+                <div id="Group_telefono-formulario" class="clearfix">
+                    <p id="numero-formulario">
+                        &#x23;&#x3a;
+                    </p>
+                    <p id="texto_telefono-formulario">
+                        escriba aqui su numero.
+                    </p>
+                </div>
+                <div id="Group_mensaje-formulario" class="clearfix">
+                    <p id="subtuloMENSAJE">
+                        MENSAJE
+                    </p>
+                    <div id="Box_textoMensaje-formulario" class="clearfix">
+                        <p id="texto_mensaje-formulario">
+                            Escriba aqui su mensaje...
+                        </p>
+                    </div>
+                    <p id="cajaENVIAR">
+                        ENVIAR
+                    </p>
+                </div>
+            </div>
+            <div id="Box_redesSociales" class="clearfix">
+                <a href="https://twitter.com/inddexco" target="_blank">
+                    <img id="iconoTwitter_inddex" src="{% static 'img/social-twitter-inddex.svg' %}" class="image" />
+                </a>
+                <a href="https://www.facebook.com/inddex/" target="_blank">
+                    <img id="iconoFacebook_inddex" src="{% static 'img/social-facebook-inddex.svg' %}" class="image" />
+                </a>
+                <a href="https://www.instagram.com/inddexco/" target="_blank">
+                    <img id="iconoInstagram_inddex" src="{% static 'img/social-instagram-inddex.svg' %}" class="image" />
+                </a>
+            </div>
+            <p id="textosContacto-mail_telefono">
+                <a id="SpanTextosContacto-mail_telefono" href="mailto:hello@inddex.co" target="_blank">hello&#x40;inddex.co</a>
+                <br />&#x28;&#x2b;57&#x29; 3138536947
+            </p>
+        </div>
+    </div>
 </body>
-
-</html>
