@@ -7,6 +7,3 @@ from .models import Contacto
 def contacto(request):
     contactos = Contacto.objects.all()
     return render(request, 'Contacto.html', {'contactos': contactos})
-
-
-
