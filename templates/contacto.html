@@ -20,14 +20,14 @@
                 <span id="SpanContacto">Contacto</span>
             </p>
             <div id="Box_logo" class="clearfix">
-                <a href="../index.html">
+                <a href="{% url 'home' %}">
                     <img id="logotipoInddex" src="{% static 'img/inddex%20logo.svg'%}" class="image" />
                 </a>
                 <div id="Box_menu" class="clearfix">
-                    <a id="texto_NOSOTROS" href="nosotros.html">
+                    <a id="texto_NOSOTROS" href="{% url 'nosotros' %}">
                         . NOSOTROS
                     </a>
-                    <a id="texto_TRABAJO" href="trabajos.html">
+                    <a id="texto_TRABAJO" href="{% url 'trabajos' %}">
                         . NUESTRO TRABAJO
                     </a>
                     <p id="texto_CONTACTENOS">

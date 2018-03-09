@@ -22,22 +22,17 @@
                 Somos Inddex un estudio creativo que desarrolla y diseña experiencias digitales.
             </p>
             <div id="Box_logo" class="clearfix">
-                <a href="index.html">
+                <a href="{% url 'home' %}">
                     <img id="logotipoInddex" src={%static 'img/inddex%20logo.svg' %} class="image" />
                 </a>
                 <div id="Box_menu" class="clearfix">
-                     {% block title %}
-                    <a href="{% url 'nosotros' %}">Contact Us</a>
-                     {% endblock title %}
-                    
-                    <a href=>Contact Us</a>
-                    <a id="texto_NOSOTROS" href="pages/nosotros.html">
+                    <a id="texto_NOSOTROS" href="{% url 'nosotros' %}">
                         . NOSOTROS
                     </a>
-                    <a id="texto_TRABAJO" href="pages/trabajos.html">
+                    <a id="texto_TRABAJO" href="{% url 'trabajos' %}">
                         . NUESTRO TRABAJO
                     </a>
-                    <a id="texto_CONTACTENOS" href="pages/contacto.html">
+                    <a id="texto_CONTACTENOS" href="{% url 'contacto' %}">
                         . CONTACTENOS
                     </a>
                 </div>
