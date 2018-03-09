@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+{% load static %}<!DOCTYPE html>
 <html>
 
 <head>
-    <link rel="stylesheet" href="../css/boilerplate.css">
-    <link rel="stylesheet" href="../css/styleinddex.css">
+    <link rel="stylesheet" href="{% static 'css/boilerplate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styleinddex.css'%}">
     <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0">
 
 </head>
@@ -18,7 +18,7 @@
             </p>
             <div id="Box_logo" class="clearfix">
                 <a href="../index.html">
-                    <img id="logotipoInddex" src="../img/inddex%20logo.svg" class="image" />
+                    <img id="logotipoInddex" src={%static '/img/inddex%20logo.svg'%} class="image" />
                 </a>
                 <div id="Box_menu" class="clearfix">
                     <a id="texto_NOSOTROS" href="nosotros.html">
@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div id="Box_gif-nosotros" class="clearfix">
-                <img id="gif1-nosotros" src="../img/inddex-conoscanos.gif" class="image" />
+                <img id="gif1-nosotros" src={%static '/img/inddex-conoscanos.gif' %} class="image" />
             </div>
             <p id="texto1somosIndex-nosotros">
                 SOMOS INDDEX, NOS ESPECIALIZAMOS EN CREAR ESTRATEGIAS Y PRODUCTOS ESPECIALES QUE SE INVOLUCREN CON LAS PERSONAS.
@@ -93,7 +93,7 @@
                 </div>
             </div>
             <div id="Box_gif2-nosotros" class="clearfix">
-                <img id="gif2-nosotros" src="../img/inddex-conoscanos2.gif" class="image" />
+                <img id="gif2-nosotros" src={%static '/img/inddex-conoscanos2.gif' %} class="image" />
             </div>
             <div id="Box-ofrecemos-nosotros" class="clearfix">
                 <p id="tituloOfrecemos-nosotros">
@@ -153,13 +153,13 @@
         </div>
         <div id="Box_redesSociales" class="clearfix">
             <a href="https://twitter.com/inddexco">
-                <img id="iconoTwitter_inddex" src="../img/social-twitter-inddex.svg" class="image" />
+                <img id="iconoTwitter_inddex" src={%static '/img/social-twitter-inddex.svg' %} class="image" />
             </a>
             <a href="https://www.facebook.com/inddex/" target="_blank">
-                <img id="iconoFacebook_inddex" src="../img/social-facebook-inddex.svg" class="image" />
+                <img id="iconoFacebook_inddex" src={%static '/img/social-facebook-inddex.svg' %} class="image" />
             </a>
             <a href="https://www.instagram.com/inddexco/" target="_blank">
-                <img id="iconoInstagram_inddex" src="../img/social-instagram-inddex.svg" class="image" />
+                <img id="iconoInstagram_inddex" src={%static '/img/social-instagram-inddex.svg' %} class="image" />
             </a>
         </div>
         <p id="textosContacto-mail_telefono">

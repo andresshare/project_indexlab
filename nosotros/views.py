@@ -4,4 +4,4 @@ from django.http import HttpResponse
 
 
 def nosotros(request):
-    return render(request, 'Nosotros.html')
+    return render(request, 'nosotros.html')

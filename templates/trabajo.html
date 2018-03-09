@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+{% load static %}<!DOCTYPE html>
 <html>
 
 <head>
-    <link rel="stylesheet" href="../css/boilerplate.css">
-    <link rel="stylesheet" href="../css/styleinddex.css">
+    <link rel="stylesheet" href="{% static 'css/boilerplate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styleinddex.css'%}">
     <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0">
 
 </head>
@@ -18,7 +18,7 @@
             </p>
             <div id="Box_logo" class="clearfix">
                 <a href="../index.html">
-                    <img id="logotipoInddex" src="../img/inddex logo.svg" class="image" />
+                    <img id="logotipoInddex" src={%static '/img/inddex logo.svg' %} class="image" />
                 </a>
                 <div id="Box_menu" class="clearfix">
                     <a id="texto_NOSOTROS" href="nosotros.html">
@@ -42,13 +42,13 @@
             </p>
             <div id="Box_redesSociales" class="clearfix">
                 <a href="https://twitter.com/inddexco" target="_blank">
-                    <img id="iconoTwitter_inddex" src="../img/social-twitter-inddex.svg" class="image" />
+                    <img id="iconoTwitter_inddex" src={%static '/img/social-twitter-inddex.svg' %} class="image' %} />
                 </a>
                 <a href="https://www.facebook.com/inddex/" target="_blank">
-                    <img id="iconoFacebook_inddex" src="../img/social-facebook-inddex.svg" class="image" />
+                    <img id="iconoFacebook_inddex" src={%static '/img/social-facebook-inddex.svg'%} class="image" />
                 </a>
                 <a href="https://www.instagram.com/inddexco/" target="_blank">
-                    <img id="iconoInstagram_inddex" src="../img/social-instagram-inddex.svg" class="image" />
+                    <img id="iconoInstagram_inddex" src={%static '/img/social-instagram-inddex.svg' %} class="image" />
                 </a>
             </div>
             <p id="textosContacto-mail_telefono">
