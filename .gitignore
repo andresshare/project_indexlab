@@ -14,3 +14,10 @@ myproject/__pycache__/urls.cpython-36.pyc
 myproject/__pycache__/wsgi.cpython-36.pyc
 manage.py
 contacto/tests.py
+nosotros/models.py
+nosotros/tests.py
+trabajo/models.py
+trabajo/tests.py
+trabajo/views.py
+trabajo/admin.py
+nosotros/admin.py
