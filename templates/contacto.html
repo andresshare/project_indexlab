@@ -35,45 +35,40 @@
                     </p>
                 </div>
             </div>
-            <div id="Box_Formulario" class="clearfix">
+        
+            <form id="Box_Formulario" class="clearfix" action="" method="post"> {% csrf_token %}
                 <div id="Group_nombre-formulario" class="clearfix">
-                    <p id="N_-formulario">
-                        N&#x3a;
-                    </p>
-                    <p id="texto_nombre-formulario">
-                        escriba aqui su nombre.
-                    </p>
+                    <label id="N_-formulario">N&#x3a;</label>
+                    <input type="text" id="texto_nombre-formulario" placeholder="escriba aqui su nombre." />
                 </div>
                 <div id="Group_email-formulario" class="clearfix">
-                    <p id="_-formulario">
-                        &#x40;&#x3a;
-                    </p>
-                    <p id="texto_email-formulario">
-                        escriba aqui su E-mail.
-                    </p>
+                    <label id="_-formulario" for="mail">&#x40;&#x3a;</label>
+                    <input type="email" id="texto_email-formulario" placeholder="escriba aqui su email" . />
                 </div>
+            
                 <div id="Group_telefono-formulario" class="clearfix">
-                    <p id="numero-formulario">
-                        &#x23;&#x3a;
-                    </p>
-                    <p id="texto_telefono-formulario">
-                        escriba aqui su numero.
-                    </p>
+                    <label id="numero-formulario">&#x23;&#x3a;</label>
+                    <input type="text" id="texto_telefono-formulario" placeholder="escriba aqui su numero." />
                 </div>
-                <div id="Group_mensaje-formulario" class="clearfix">
-                    <p id="subtuloMENSAJE">
-                        MENSAJE
-                    </p>
-                    <div id="Box_textoMensaje-formulario" class="clearfix">
-                        <p id="texto_mensaje-formulario">
-                            Escriba aqui su mensaje...
-                        </p>
-                    </div>
-                    <p id="cajaENVIAR">
-                        ENVIAR
-                    </p>
+            
+                <div id="Group_mensaje-formulario">
+                    <label id="subtuloMENSAJE">MENSAJE</label>
+                    <textarea id="Box_textoMensaje-formulario" class="clearfix" id=" msg ">
+
+                    </textarea>
+                
+                
+                <div >
+            		<button id="cajaENVIAR" type="submit " value="Submit ">Enviar</button>
+            	</div>
                 </div>
-            </div>
+            	
+            </form>
+                
+
+
+
+
             <div id="Box_redesSociales" class="clearfix">
                 <a href="https://twitter.com/inddexco" target="_blank">
                     <img id="iconoTwitter_inddex" src="{% static 'img/social-twitter-inddex.svg' %}" class="image" />
