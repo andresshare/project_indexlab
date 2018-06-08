@@ -1,8 +1,16 @@
-from django import forms
+from django.shortcuts import render
 from .models import Contacto
+from .forms import ContactoForm
 
 
-class ContactoForm(forms.ModelForm):
-    class Meta:
-        model = Contacto
-        fields = ('nombre', 'email', 'telefono', 'mensaje', )
+def contacto(request):
+    contactos = Contacto.objects.all()
+
+    if request.method == 'POST':
+        formulario = ContactoForm(data=request.POST)
+        if formulario.is_valid():
+            formulario.save()
+    else:
+        formulario = ContactoForm()
+
+    return render(request, 'contacto.html', {'contactos': contactos, 'form': formulario})
